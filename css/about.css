@@ -1,0 +1,71 @@
+/* ABOUT HERO */
+.about-hero {
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.about-hero span {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+/* SKILLS SECTION */
+.about-skills {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.skill-box {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(135deg, #1e293b, #334155);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+}
+
+.skill-box h3 {
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+/* JOURNEY SECTION */
+.journey {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* FADE IN ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
